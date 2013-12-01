@@ -1,8 +1,8 @@
 from django.forms import widgets
 from rest_framework import serializers
-from models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES
+from models import Manufacturer, Drink
 
-class SnippetSerializer(serializers.Serializer):
+class ManufacturerSerializer(serializers.Serializer):
     pk = serializers.Field()  # Note: `Field` is an untyped read-only field.
     title = serializers.CharField(required=False,
                                   max_length=100)

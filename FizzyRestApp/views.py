@@ -1,27 +1,25 @@
-from django.http import HttpResponse
-from django.views.decorators.csrf import csrf_exempt
 from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
-from models import Snippet
-from serializers import SnippetSerializer
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+from models import Manufacturer, Drink
+from serializers import ManufacturerSerializer
 
 class JSONResponse(HttpResponse):
-    """
-    An HttpResponse that renders its content into JSON.
-    """
     def __init__(self, data, **kwargs):
         content = JSONRenderer().render(data)
         kwargs['content_type'] = 'application/json'
         super(JSONResponse, self).__init__(content, **kwargs)
-        
+
+
+def index(request):
+    return manufacturers_list(request)
+
 @csrf_exempt
-def snippet_list(request):
-    """
-    List all code snippets, or create a new snippet.
-    """
+def manufacturers_list(request):
     if request.method == 'GET':
-        snippets = Snippet.objects.all()
-        serializer = SnippetSerializer(snippets, many=True)
+        manufacturers = Manufacturer.objects.all()
+        serializer = ManufacturerSerializer(manufacturers, many=True)
         return JSONResponse(serializer.data)
 
     elif request.method == 'POST':
@@ -32,25 +30,25 @@ def snippet_list(request):
             return JSONResponse(serializer.data, status=201)
         else:
             return JSONResponse(serializer.errors, status=400)
-        
-        
+
+
 @csrf_exempt
-def snippet_detail(request, pk):
+def manufacturer_detail(request, pk):
     """
-    Retrieve, update or delete a code snippet.
+    Retrieve, update or delete a manufacturer info.
     """
     try:
-        snippet = Snippet.objects.get(pk=pk)
-    except Snippet.DoesNotExist:
+        manufacturer = Manufacturer.objects.get(pk=pk)
+    except Manufacturer.DoesNotExist:
         return HttpResponse(status=404)
 
     if request.method == 'GET':
-        serializer = SnippetSerializer(snippet)
+        serializer = SnippetSerializer(manufacturer)
         return JSONResponse(serializer.data)
 
     elif request.method == 'PUT':
         data = JSONParser().parse(request)
-        serializer = SnippetSerializer(snippet, data=data)
+        serializer = SnippetSerializer(manufacturer, data=data)
         if serializer.is_valid():
             serializer.save()
             return JSONResponse(serializer.data)
@@ -58,5 +56,5 @@ def snippet_detail(request, pk):
             return JSONResponse(serializer.errors, status=400)
 
     elif request.method == 'DELETE':
-        snippet.delete()
+        manufacturer.delete()
         return HttpResponse(status=204)
