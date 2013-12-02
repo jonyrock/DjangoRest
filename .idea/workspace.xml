@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="0746f5cd-198f-4e65-aef9-4e051034f193" name="Default" comment="" />
-    <list default="true" id="7d2dd95c-c760-4f2d-81d2-8ce67c73665c" name="" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/base.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FizzyRestApp/tests.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/models.py" afterPath="$PROJECT_DIR$/FizzyRestApp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/serializers.py" afterPath="$PROJECT_DIR$/FizzyRestApp/serializers.py" />
+    <list default="true" id="4bc28c67-59d2-481b-a977-33ff2762357e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/psd/logo.xcf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/html/html_content_type_provider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json/json_response.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/manufaturers_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json/views.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/FuzzyRest.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/alex.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FizzyRestApp/serializers.py" afterPath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json/serializers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/FizzyRest.iml" afterPath="$PROJECT_DIR$/.idea/FizzyRest.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/base.html" afterPath="$PROJECT_DIR$/template/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.sql" afterPath="$PROJECT_DIR$/database.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/testrunner.xml" afterPath="$PROJECT_DIR$/.idea/testrunner.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRest/urls.py" afterPath="$PROJECT_DIR$/FizzyRest/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/views.py" afterPath="$PROJECT_DIR$/FizzyRestApp/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <ignored path="DjangoRest.iws" />
+    <ignored path="FizzyRest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7d2dd95c-c760-4f2d-81d2-8ce67c73665c" time="1385917881100" ignored="false" />
-    <file path="/settings.py" changelist="0746f5cd-198f-4e65-aef9-4e051034f193" time="1385676601484" ignored="false" />
-    <file path="/serializers.py" changelist="7d2dd95c-c760-4f2d-81d2-8ce67c73665c" time="1385920187464" ignored="false" />
-    <file path="/urls.py" changelist="7d2dd95c-c760-4f2d-81d2-8ce67c73665c" time="1385919828995" ignored="false" />
-    <file path="/models.py" changelist="7d2dd95c-c760-4f2d-81d2-8ce67c73665c" time="1385919069604" ignored="false" />
-    <file path="/base.html" changelist="7d2dd95c-c760-4f2d-81d2-8ce67c73665c" time="1385918997671" ignored="false" />
-    <file path="/views.py" changelist="7d2dd95c-c760-4f2d-81d2-8ce67c73665c" time="1385921700440" ignored="false" />
-    <file path="/responses.py" changelist="7d2dd95c-c760-4f2d-81d2-8ce67c73665c" time="1385921000865" ignored="false" />
+    <file path="/Dummy.txt" changelist="4bc28c67-59d2-481b-a977-33ff2762357e" time="1386005027680" ignored="false" />
+    <file path="/controllers.py" changelist="4bc28c67-59d2-481b-a977-33ff2762357e" time="1386005387970" ignored="false" />
+    <file path="/views.py" changelist="4bc28c67-59d2-481b-a977-33ff2762357e" time="1386012536808" ignored="false" />
+    <file path="/view_factory.py" changelist="4bc28c67-59d2-481b-a977-33ff2762357e" time="1386011733089" ignored="false" />
+    <file path="/serializers.py" changelist="4bc28c67-59d2-481b-a977-33ff2762357e" time="1386006323884" ignored="false" />
+    <file path="/html_content_type_provider.py" changelist="4bc28c67-59d2-481b-a977-33ff2762357e" time="1386011034718" ignored="false" />
+    <file path="/Python Console" changelist="4bc28c67-59d2-481b-a977-33ff2762357e" time="1386012637993" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,91 +52,68 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="DjangoRest" />
+    <favorites_list name="FizzyRest" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/views.py">
+      <file leaf-file-name="json_response.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json/json_response.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="508" selection-end="508" vertical-scroll-proportion="0.40108892">
+            <state line="8" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="0.23652174">
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/models.py">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FizzyRestApp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="32" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="8" selection-start="141" selection-end="141" vertical-scroll-proportion="-3.9230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python2.7/dist-packages/django/conf/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="50" selection-start="4121" selection-end="4121" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRest/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="21" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRest/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="18" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRest/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="9" column="31" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="serializers.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/serializers.py">
+        <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+            <state line="11" column="16" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="26" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content_type_provider.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="12" selection-start="661" selection-end="665" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="14" selection-start="302" selection-end="302" vertical-scroll-proportion="-7.8461537">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,15 +136,19 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/DjangoRestApp/serializers.py" />
-        <option value="$PROJECT_DIR$/DjangoRestApp/views.py" />
-        <option value="$PROJECT_DIR$/DjangoRest/urls.py" />
-        <option value="$PROJECT_DIR$/DjangoRest/settings.py" />
-        <option value="$PROJECT_DIR$/template/base.html" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/models.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/views/__init__.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/view_factory.py" />
         <option value="$PROJECT_DIR$/FizzyRestApp/serializers.py" />
-        <option value="$PROJECT_DIR$/FizzyRest/urls.py" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/responses.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/views/view_factory.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/controllers.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/views/json/json_response.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/views/json/views.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/html/views.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json/serializers.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/view_factory.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/html/html_content_type_provider.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py" />
         <option value="$PROJECT_DIR$/FizzyRestApp/views.py" />
       </list>
     </option>
@@ -161,22 +157,6 @@
     <option name="x" value="-2" />
     <option name="width" value="1370" />
     <option name="height" value="745" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Buildout</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -204,17 +184,18 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DjangoRest" />
+              <option name="myItemId" value="FizzyRest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DjangoRest" />
+              <option name="myItemId" value="FizzyRest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -224,7 +205,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DjangoRest" />
+              <option name="myItemId" value="FizzyRest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -232,39 +213,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FizzyRestApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DjangoRest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FizzyRest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="fileColors" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/FizzyRest/settings.py" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Sites/whiz" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -275,52 +240,15 @@
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager" selected="Django server.FizzyRest">
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DjangoRest" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="FizzyRest" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
-      <method />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FizzyRestApp/content_type_providers" />
+      <recent name="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json" />
+      <recent name="$PROJECT_DIR$/FizzyRestApp/views/json" />
+      <recent name="$PROJECT_DIR$/FizzyRestApp/views" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django server.FizzyServer">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -338,6 +266,29 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="FizzyRest" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -349,7 +300,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DjangoRest" />
+      <module name="FizzyRest" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
@@ -387,7 +338,7 @@
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <configuration default="false" name="FhizzyServer" type="Python.DjangoServer" factoryName="Django server">
+    <configuration default="false" name="FizzyServer" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -395,32 +346,6 @@
         <env name="DJANGO_SETTINGS_MODULE" value="FizzyRest.settings" />
       </envs>
       <option name="SDK_HOME" value="/usr/bin/python2.7" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DjangoRest" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="FizzyRest" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="FizzyRest.settings" />
-      </envs>
-      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -435,13 +360,14 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Django server.FhizzyServer" />
-      <item index="1" class="java.lang.String" itemvalue="Django server.FizzyRest" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Django server.FizzyServer" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -463,17 +389,11 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
-    <task id="Default" summary="Default task">
-      <changelist id="0746f5cd-198f-4e65-aef9-4e051034f193" name="Default" comment="" />
-      <created>1385663652105</created>
-      <updated>1385730114377</updated>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4bc28c67-59d2-481b-a977-33ff2762357e" name="Default" comment="" />
+      <created>1385983688364</created>
+      <updated>1385983688364</updated>
     </task>
-    <task active="true" id="LOCAL-00001">
-      <changelist id="7d2dd95c-c760-4f2d-81d2-8ce67c73665c" name="" comment="" />
-      <created>1385730112672</created>
-      <updated>1385730114450</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -482,19 +402,18 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20151515" sideWeight="0.6716667" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39934355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25757575" sideWeight="0.6013289" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986711" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43326038" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -561,124 +480,122 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FizzyRest/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0">
+        <state line="12" column="5" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/rest_framework/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRest/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="1" selection-start="90" selection-end="90" vertical-scroll-proportion="0.136" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/rest_framework/parsers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="6" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.33333334" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.14782609">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+        <state line="7" column="39" selection-start="249" selection-end="249" vertical-scroll-proportion="0.1773913">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/conf/__init__.py">
+    <entry file="file:///usr/lib/python2.7/dist-packages/gnome_sudoku/saver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="50" selection-start="4121" selection-end="4121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="19" selection-start="11047" selection-end="11047" vertical-scroll-proportion="0.6816038" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="141" selection-end="141" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="4" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.3321234">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/db/models/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="12" selection-start="2385" selection-end="2385" vertical-scroll-proportion="0.33271375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRest/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="18" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRest/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+        <state line="270" column="8" selection-start="10052" selection-end="10052" vertical-scroll-proportion="5.1">
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#24#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/html/html_content_type_provider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="65" selection-start="405" selection-end="405" vertical-scroll-proportion="0.24593128">
+          <folding>
+            <element signature="e#0#89#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FizzyRestApp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="470" selection-end="470" vertical-scroll-proportion="0.3547826">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRest/urls.py">
+    <entry file="file://$PROJECT_DIR$/template/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
+        <state line="12" column="14" selection-start="302" selection-end="302" vertical-scroll-proportion="-7.8461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="12" selection-start="661" selection-end="665" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FizzyRestApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="508" selection-end="508" vertical-scroll-proportion="0.40108892">
+        <state line="9" column="31" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#1#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="16" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json/json_response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="0.23652174">
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
 

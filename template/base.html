@@ -1,15 +1,31 @@
-{% laod staticfiles %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}Fizzy Drinks Stat{% endblock %}</title>
-    <style>
-        
-    </style>
+    <title>{% block title %} Fizzy Drinks Stat {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
 </head>
 
 <body>
-    <div>{% block title %}{% endblock %}</div>
+    <div id="base-page">
+        <div id="base-header">
+            <div id="base-header-logo"></div>
+            <div id="base-top-navigation">
+                <ul>
+                    <li>Home</li>
+                    <li>Manufactures</li>
+                </ul>
+            </div>
+        </div>
+        <div id="base-content">
+            {% block content %}    
+            {% endblock %}
+        </div>
+    
+        <div id="base-footer">
+            2013, <a href="http://github.com/jonyrock/FizzyRest">FizzyRest</a>
+        </div>
+    </div>
     
 </body>
 </html>

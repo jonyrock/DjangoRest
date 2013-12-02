@@ -1,36 +1,26 @@
-from rest_framework.renderers import JSONRenderer
-from rest_framework.parsers import JSONParser
+
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from models import Manufacturer, Drink
-from serializers import ManufacturerSerializer
-
-class JSONResponse(HttpResponse):
-    def __init__(self, data, **kwargs):
-        content = JSONRenderer().render(data)
-        kwargs['content_type'] = 'application/json'
-        super(JSONResponse, self).__init__(content, **kwargs)
+from content_type_providers.content_type_provider import ContentTypeProvider
 
 
 def index(request):
-    return manufacturers_list(request)
+    provider = ContentTypeProvider.create_by_request(request)
+    return provider.index_get()
 
-@csrf_exempt
 def manufacturers_list(request):
+    provider = ContentTypeProvider.create_by_request(request)
     if request.method == 'GET':
         manufacturers = Manufacturer.objects.all()
-        serializer = ManufacturerSerializer(manufacturers, many=True)
-        return JSONResponse(serializer.data)
-
+        return provider.manufacturers_list_get(request, manufacturers)
     elif request.method == 'POST':
-        data = JSONParser().parse(request)
-        serializer = SnippetSerializer(data=data)
-        if serializer.is_valid():
-            serializer.save()
-            return JSONResponse(serializer.data, status=201)
+        obj = provider.manufacturers_list_post(request)
+        if obj.is_valid():
+            obj.save()
+            return provider.response_ok(request)
         else:
-            return JSONResponse(serializer.errors, status=400)
-
+            return provider.response_list_errors(obj.errors)
 
 @csrf_exempt
 def manufacturer_detail(request, pk):
@@ -41,19 +31,18 @@ def manufacturer_detail(request, pk):
         manufacturer = Manufacturer.objects.get(pk=pk)
     except Manufacturer.DoesNotExist:
         return HttpResponse(status=404)
-
+    
+    provider = ContentTypeProvider.create_by_request(request)
     if request.method == 'GET':
-        serializer = SnippetSerializer(manufacturer)
-        return JSONResponse(serializer.data)
-
+        return provider.manufacturer_detail_get(request, { manufacturer: manufacturer } )
+        
     elif request.method == 'PUT':
-        data = JSONParser().parse(request)
-        serializer = SnippetSerializer(manufacturer, data=data)
-        if serializer.is_valid():
-            serializer.save()
-            return JSONResponse(serializer.data)
+        obj = provider.manufacturer_detail_put(request)
+        if obj.is_valid():
+            obj.save()
+            return provider.response_ok()
         else:
-            return JSONResponse(serializer.errors, status=400)
+            return provider.response_error_list(obj.errors)
 
     elif request.method == 'DELETE':
         manufacturer.delete()
