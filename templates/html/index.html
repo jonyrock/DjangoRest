@@ -1,0 +1,36 @@
+{%  extends 'html/base.html' %}
+
+{% block title %}
+    Welcome to Fizzy Drinks Database
+{% endblock %}
+
+{% block content %}
+    
+    <div id="logos-list">
+        {% for m in manufacturers %}
+        <div class="logos-list-item">
+            <img src="{{ m.imageUrl }}" alt="{{ m.title }}" />
+        </div>
+        {% endfor %}
+    </div>
+    <div id="form-manufacturer-add">
+        <h3>Add new manufacturer</h3>
+        <form method="post">
+            <table>
+                <tr>
+                    <td class="td-label">Title:</td>
+                    <td class="td-input"><input type="text" name="manufacturer-title"> </td>
+                </tr>
+                <tr>
+                    <td class="td-label">Year founded:</td>
+                    <td class="td-input"><input type="text" name="manufacturer-yearFounded"> </td>
+                </tr>
+                <tr>
+                    <td class="td-label">Logo image url: </td>
+                    <td class="td-input"><input type="text" name="manufacturer-imageUrl"> </td>
+                </tr>
+            </table>
+            <input type="submit">
+        </form>
+    </div>
+{% endblock %}
