@@ -11,12 +11,14 @@ def index(request):
         data = Manufacturer.objects.all()
         return provider.index_get(request, data)
     elif request.method == 'POST':
-            obj = provider.index_post(request)
-            if obj.is_valid():
+            content_obj = provider.index_post(request)
+            if content_obj.is_valid():
+                obj = content_obj.get_obj()
                 obj.save()
                 return provider.response_ok(request)
             else:
-                return provider.response_list_errors(obj.errors)
+                return provider.response_list_errors(request, 
+                                                     { 'errorsList' : content_obj.errors })
 
 def manufacturers_list(request):
     provider = create_by_request(request)

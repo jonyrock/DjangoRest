@@ -11,14 +11,13 @@ class ContentTypeProvider:
     
     def index_post(self, request, data):
         """
-        Return parsed from http object to save
+        Return parsed from http object like 
+        Form or Serializer with is_valid() method
         """
         pass
 
     def manufacturers_list_get(self, request, data):
         pass
-
-    
 
     def manufacturer_detail_get(self, request, data):
         pass
