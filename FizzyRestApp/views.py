@@ -1,14 +1,13 @@
-
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
-from models import Manufacturer, Drink
+from models import Task
 from content_type_providers.content_type_provider import create_by_request
 
 @csrf_exempt
 def index(request):
     provider = create_by_request(request)
     if request.method == 'GET':
-        data = Manufacturer.objects.all()
+        data = Task.objects.all()[:30]
         return provider.index_get(request, data)
     elif request.method == 'POST':
             content_obj = provider.index_post(request)
@@ -20,15 +19,14 @@ def index(request):
                 return provider.response_list_errors(request, 
                                                      { 'errorsList' : content_obj.errors })
 
-def manufacturers_list(request):
+def tasks_list(request):
     provider = create_by_request(request)
     if request.method == 'GET':
-        manufacturers = Manufacturer.objects.all()
+        manufacturers = Tasks.objects.all()
         return provider.manufacturers_list_get(request, manufacturers)
     
-
 @csrf_exempt
-def manufacturer_detail(request, pk):
+def task_detail(request, pk):
     """
     Retrieve, update or delete a manufacturer info.
     """

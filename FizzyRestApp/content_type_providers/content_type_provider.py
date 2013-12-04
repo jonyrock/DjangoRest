@@ -1,14 +1,13 @@
-
-
 def create_by_request(request):
-    from html.html_content_type_provider import HtmlContentTypeProvider 
+    from html.html_content_type_provider import HtmlContentTypeProvider
+
     return HtmlContentTypeProvider()
 
+
 class ContentTypeProvider:
-    
     def index_get(self, request, data):
         pass
-    
+
     def index_post(self, request, data):
         """
         Return parsed from http object like 
@@ -16,13 +15,13 @@ class ContentTypeProvider:
         """
         pass
 
-    def manufacturers_list_get(self, request, data):
+    def tasks_list_get(self, request, data):
         pass
 
-    def manufacturer_detail_get(self, request, data):
+    def tasks_detail_get(self, request, data):
         pass
 
-    def manufacturer_detail_put(self, request, data):
+    def tasks_detail_put(self, request, data):
         """
         Return parsed from http object to save
         """

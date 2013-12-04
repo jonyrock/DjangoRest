@@ -7,20 +7,26 @@
 {% block content %}
     
     <div id="logos-list">
-        {% for m in data %}
-        <div class="logos-list-item">
-            <a href="/manufacturers/{{ m.pk }}">
-                <img src="{{ m.imageUrl }}" alt="{{ m.title }}" />
-            </a>
-        </div>
-        {% endfor %}
+        {% if data.count == 0 %}
+            <h2>All tasks done for now</h2>
+        {% else %}        
+            <table>
+            {% for t in data %}
+            <tr>
+                <td> t.title </td>
+                <td> t.url </td>
+                <td> t.status </td>
+            </tr>
+            {% endfor %}
+            </table>
+        {% endif %}
     </div>
-    <div id="form-manufacturer-add">
+    <div id="form-task-add">
         <h3>Add new manufacturer</h3>
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
-            <input type="submit">
+            <input type="submit" value="create task">
         </form>
     </div>
 {% endblock %}

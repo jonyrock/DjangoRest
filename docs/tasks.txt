@@ -1,0 +1,19 @@
+*** TODO ***
+* Check refactoring for tasks
+* Postgres model add test
+* Postgres model add from form
+* Task worker
+* Get worker status
+* Worker control test: delete and pause (through console)
+* Worker user interface: delete and pause
+* Worker user interface tests
+* Html full implementation
+
+*** GOOD TODO ***
+* only active tasks on in index
+* show files in queue if tasks is waiting 
+* fix logo
+
+*** DONE ***
+* User task model
+* Postgres connection
