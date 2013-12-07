@@ -1,7 +1,4 @@
 *** TODO ***
-* Check refactoring for tasks
-* Postgres model add test
-* Postgres model add from form
 * Task worker
 * Get worker status
 * Worker control test: delete and pause (through console)
@@ -10,10 +7,13 @@
 * Html full implementation
 
 *** GOOD TODO ***
+* Check refactoring for tasks
 * only active tasks on in index
 * show files in queue if tasks is waiting 
 * fix logo
 
 *** DONE ***
+* Postgres model add test
+* Postgres model add from form
 * User task model
 * Postgres connection

@@ -13,20 +13,20 @@
             <table>
             {% for t in data %}
             <tr>
-                <td> t.title </td>
-                <td> t.url </td>
-                <td> t.status </td>
+                <td> {{ t.title }} </td>
+                <td> {{ t.fileUrl }} </td>
+                <td> {{ t.status }} </td>
             </tr>
             {% endfor %}
             </table>
         {% endif %}
     </div>
     <div id="form-task-add">
-        <h3>Add new manufacturer</h3>
+        <h3>Add file to download</h3>
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
-            <input type="submit" value="create task">
+            <input type="submit" value=DOWNLOAD>
         </form>
     </div>
 {% endblock %}

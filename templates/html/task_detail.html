@@ -1,0 +1,12 @@
+{%  extends 'html/base.html' %}
+
+{% block title %}
+    Task details {{ task.title }}
+{% endblock  %}
+
+{% block content %}
+    <h2> {{ task.title }} </h2>
+    <p>{{ task.fileUrl }}</p>
+    <p>{{ task.status }}</p>
+{% endblock %}
+

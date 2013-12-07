@@ -18,10 +18,10 @@ class ContentTypeProvider:
     def tasks_list_get(self, request, data):
         pass
 
-    def tasks_detail_get(self, request, data):
+    def task_detail_get(self, request, data):
         pass
 
-    def tasks_detail_put(self, request, data):
+    def task_detail_put(self, request, data):
         """
         Return parsed from http object to save
         """

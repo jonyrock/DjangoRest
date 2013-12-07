@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import redirect
 from django.views.decorators.csrf import csrf_exempt
 from models import Task
 from content_type_providers.content_type_provider import create_by_request
@@ -14,7 +15,7 @@ def index(request):
             if content_obj.is_valid():
                 obj = content_obj.get_obj()
                 obj.save()
-                return provider.response_ok(request)
+                return redirect('/tasks/' + str(obj.pk))
             else:
                 return provider.response_list_errors(request, 
                                                      { 'errorsList' : content_obj.errors })
@@ -22,22 +23,22 @@ def index(request):
 def tasks_list(request):
     provider = create_by_request(request)
     if request.method == 'GET':
-        manufacturers = Tasks.objects.all()
+        manufacturers = Task.objects.all()
         return provider.manufacturers_list_get(request, manufacturers)
     
 @csrf_exempt
-def task_detail(request, pk):
+def task_details(request, pk):
     """
     Retrieve, update or delete a manufacturer info.
     """
     try:
-        manufacturer = Manufacturer.objects.get(pk=pk)
-    except Manufacturer.DoesNotExist:
+        task = Task.objects.get(pk=pk)
+    except Task.DoesNotExist:
         return HttpResponse(status=404)
     
     provider = create_by_request(request)
     if request.method == 'GET':
-        return provider.manufacturer_detail_get(request, { manufacturer: manufacturer } )
+        return provider.task_detail_get(request, { 'task': task } )
         
     elif request.method == 'PUT':
         obj = provider.manufacturer_detail_put(request)
@@ -48,5 +49,5 @@ def task_detail(request, pk):
             return provider.response_error_list(obj.errors)
 
     elif request.method == 'DELETE':
-        manufacturer.delete()
+        task.delete()
         return HttpResponse(status=204)

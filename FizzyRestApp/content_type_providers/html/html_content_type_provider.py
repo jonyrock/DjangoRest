@@ -16,10 +16,10 @@ class HtmlContentTypeProvider(ContentTypeProvider):
         return form
 
     def tasks_list_get(self, request, data):
-        return render_to_response("html/manufacturers_list.html", data)
+        return render_to_response("html/task_list.html", data)
 
     def task_detail_get(self, request, data):
-        return render_to_response("html/manufacturer_detail.html", data)
+        return render_to_response("html/task_detail.html", data)
 
     def response_ok(self, request):
         return render_to_response("html/ok.html")
