@@ -1,5 +1,5 @@
 *** TODO ***
-* Ordered tasks in model
+* finished time, created
 * Html full implementation
 * ajax update for file status
 * additional info about file
@@ -7,9 +7,11 @@
 
 *** GOOD TODO ***
 * decorators for provider
+* active tab
 * fix logo
 
 *** DONE ***
+* Ordered tasks in model
 * error reason
 * tabs: completed, error,
 * show files in queue if tasks is waiting

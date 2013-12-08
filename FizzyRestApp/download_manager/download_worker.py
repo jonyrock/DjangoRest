@@ -1,6 +1,7 @@
 import os
 from threading import Thread
 from celery.contrib.methods import task_method
+import datetime
 from django_pglocks import advisory_lock
 from FizzyRest.settings import DOWNLOAD_DIR
 from FizzyRestApp.download_manager import STATUS_LOCK_ID
@@ -68,6 +69,7 @@ class DownloadWorker(Thread):
 
             task.status = 'done'
             task.downloadedBytes = file_size_dl
+            task.finished = datetime.datetime.now()
             task.save()
         except Exception as e:
             task.status = 'error'

@@ -10,7 +10,7 @@ import os
 def index(request):
     provider = create_by_request(request)
     if request.method == 'GET':
-        data = Task.objects.all().filter(status='downloading').order_by('pk').reverse()
+        data = Task.task_list().filter(status='downloading')
         return provider.index_get(request, data)
     elif request.method == 'POST':
             content_obj = provider.index_post(request)
@@ -26,19 +26,19 @@ def index(request):
 def waiting_list(request):
     provider = create_by_request(request)
     if request.method == 'GET':
-        tasks = Task.objects.filter(status='waiting')
+        tasks = Task.task_list().filter(status='waiting')
         return provider.waiting_list_get(request, {'tasks': tasks })
 
 def done_list(request):
     provider = create_by_request(request)
     if request.method == 'GET':
-        tasks = Task.objects.filter(status='done')
+        tasks = Task.task_list().filter(status='done')
         return provider.done_list_get(request, {'tasks': tasks })
 
 def error_list(request):
     provider = create_by_request(request)
     if request.method == 'GET':
-        tasks = Task.objects.filter(status='error')
+        tasks = Task.task_list().filter(status='error')
         return provider.error_list_get(request, {'tasks': tasks })
 
 

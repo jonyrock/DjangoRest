@@ -8,6 +8,7 @@
     <h2> {{ task.title }} </h2>
     <i>({{ task.status }})</i>
     <p>{{ task.fileUrl }}</p>
+    <p>{{ task.created }}</p>
     {% if task.status == 'done' or task.status == 'downloading' %}
         <p>File size: {{ task.fileSizeBytes }}</p>
     {% endif %}
@@ -15,6 +16,7 @@
         <p>Downloaded: {{ task.downloadedBytes }} ({{ task.download_percentage_formatted }}%)</p>
     {% endif %}
     {% if task.status == 'done' %}
+        <p>{{ task.finished }}</p>
         <p>
             <a href="{{ task.download_url }}"> DOWNLOAD </a>
         </p>

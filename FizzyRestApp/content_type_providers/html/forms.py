@@ -7,6 +7,6 @@ class TaskForm(forms.Form):
 
     def get_obj(self):
         t = Task()
-        t.title = self.data['title']    
-        t.fileUrl = self.data['fileUrl']
+        t.title = self.data['title'].strip()
+        t.fileUrl = self.data['fileUrl'].strip()
         return t
