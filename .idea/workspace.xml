@@ -2,41 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="4bc28c67-59d2-481b-a977-33ff2762357e" name="Default" comment="" />
-    <list default="true" id="159db23b-6b5e-47d5-8806-8cc6165a5bc3" name="provider for views" comment="UI fix&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery-1.7.2.min.js" />
+    <list default="true" id="159db23b-6b5e-47d5-8806-8cc6165a5bc3" name="provider for views" comment="task delete imp&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/html/done_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/html/waiting_list.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/html/task_list.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/download_manager/__init__.py" afterPath="$PROJECT_DIR$/FizzyRestApp/download_manager/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/html/base.html" afterPath="$PROJECT_DIR$/templates/html/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/models.py" afterPath="$PROJECT_DIR$/FizzyRestApp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/html/task_detail.html" afterPath="$PROJECT_DIR$/templates/html/task_detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py" afterPath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py" afterPath="$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/download_manager/download_worker.py" afterPath="$PROJECT_DIR$/FizzyRestApp/download_manager/download_worker.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/html/html_content_type_provider.py" afterPath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/html/html_content_type_provider.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/html/index.html" afterPath="$PROJECT_DIR$/templates/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/tasks.txt" afterPath="$PROJECT_DIR$/docs/tasks.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRest/urls.py" afterPath="$PROJECT_DIR$/FizzyRest/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/views.py" afterPath="$PROJECT_DIR$/FizzyRestApp/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FizzyRest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386492333122" ignored="false" />
+    <file path="/Dummy.txt" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386494672403" ignored="false" />
     <file path="/controllers.py" changelist="4bc28c67-59d2-481b-a977-33ff2762357e" time="1386005387970" ignored="false" />
-    <file path="/views.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386494338010" ignored="false" />
+    <file path="/views.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386506345720" ignored="false" />
     <file path="/view_factory.py" changelist="4bc28c67-59d2-481b-a977-33ff2762357e" time="1386011733089" ignored="false" />
     <file path="/serializers.py" changelist="4bc28c67-59d2-481b-a977-33ff2762357e" time="1386006323884" ignored="false" />
-    <file path="/html_content_type_provider.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386176516220" ignored="false" />
-    <file path="/Python Console" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386493024629" ignored="false" />
+    <file path="/html_content_type_provider.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386507203253" ignored="false" />
+    <file path="/Python Console" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386507082983" ignored="false" />
     <file path="/main.css" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386430140512" ignored="false" />
-    <file path="/base.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386492900983" ignored="false" />
-    <file path="/urls.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386419534442" ignored="false" />
-    <file path="/content_type_provider.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386177053432" ignored="false" />
-    <file path="/index.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386469105532" ignored="false" />
+    <file path="/base.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386501321861" ignored="false" />
+    <file path="/urls.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386503802800" ignored="false" />
+    <file path="/content_type_provider.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386505002552" ignored="false" />
+    <file path="/index.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386505789571" ignored="false" />
     <file path="/forms.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386417661526" ignored="false" />
     <file path="/errors_list.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386086811461" ignored="false" />
     <file path="/ok.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386086227953" ignored="false" />
     <file path="/models.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386492452837" ignored="false" />
     <file path="/manufaturers_list.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386099152829" ignored="false" />
-    <file path="/tasks.txt" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386469528137" ignored="false" />
+    <file path="/tasks.txt" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386499296443" ignored="false" />
     <file path="/settings.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386467662357" ignored="false" />
     <file path="/manufacturer_detail.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386178457484" ignored="false" />
     <file path="/task_manager.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386178792671" ignored="false" />
-    <file path="/download_manager.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386464813331" ignored="false" />
+    <file path="/download_manager.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386500816270" ignored="false" />
     <file path="/task_detail.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386492592806" ignored="false" />
-    <file path="/download_worker.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386466059867" ignored="false" />
+    <file path="/download_worker.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386500283267" ignored="false" />
+    <file path="/task_list.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386504677910" ignored="false" />
+    <file path="/waiting_list.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386507295978" ignored="false" />
+    <file path="/done_list.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386507147477" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,95 +66,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="20" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tasks.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docs/tasks.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.36889693">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="csrf.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py">
+        <entry file="file:///usr/local/lib/python2.7/dist-packages/django/template/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="187" column="0" selection-start="8747" selection-end="8747" vertical-scroll-proportion="0.0">
+            <state line="223" column="0" selection-start="7435" selection-end="7435" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task_detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/html/task_detail.html">
+      <file leaf-file-name="download_manager.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="20" selection-start="750" selection-end="750" vertical-scroll-proportion="-9.230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-1.7.2.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/jquery-1.7.2.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="60" selection-start="65295" selection-end="65295" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/html/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="24" selection-start="587" selection-end="587" vertical-scroll-proportion="-5.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="17" selection-start="973" selection-end="982" vertical-scroll-proportion="0.0">
+            <state line="16" column="30" selection-start="534" selection-end="534" vertical-scroll-proportion="0.47469458">
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="importlib.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python2.7/dist-packages/django/utils/importlib.py">
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/html/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="24" selection-start="522" selection-end="522" vertical-scroll-proportion="-9.807693">
+            <state line="3" column="33" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,22 +113,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/FizzyRestApp/task_manager.py" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/html/forms.py" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/download_manager.py" />
-        <option value="/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py" />
-        <option value="$PROJECT_DIR$/FizzyRest/urls.py" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py" />
-        <option value="$PROJECT_DIR$/static/css/main.css" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/download_manager/download_worker.py" />
         <option value="$PROJECT_DIR$/FizzyRest/settings.py" />
-        <option value="$PROJECT_DIR$/templates/html/index.html" />
         <option value="$PROJECT_DIR$/FizzyRestApp/models.py" />
         <option value="$PROJECT_DIR$/templates/html/task_detail.html" />
-        <option value="$PROJECT_DIR$/templates/html/base.html" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/views.py" />
         <option value="$PROJECT_DIR$/docs/tasks.txt" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/download_manager/__init__.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/download_manager/download_worker.py" />
+        <option value="$PROJECT_DIR$/templates/html/base.html" />
+        <option value="$PROJECT_DIR$/FizzyRest/urls.py" />
+        <option value="$PROJECT_DIR$/templates/html/task_list.html" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py" />
+        <option value="$PROJECT_DIR$/templates/html/index.html" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/views.py" />
+        <option value="$PROJECT_DIR$/templates/html/done_list.html" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/html/html_content_type_provider.py" />
+        <option value="$PROJECT_DIR$/templates/html/waiting_list.html" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py" />
       </list>
     </option>
   </component>
@@ -247,7 +192,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -265,6 +228,78 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRestApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="download_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRestApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content_type_providers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRestApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content_type_providers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -273,7 +308,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="last_opened_file_path" value="$USER_HOME$/Sites/whiz" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -291,8 +326,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/templates/html" />
+      <recent name="$PROJECT_DIR$/static/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
@@ -508,7 +543,11 @@
       <created>1386469288599</created>
       <updated>1386469288599</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="task delete imp&#10;">
+      <created>1386494673607</created>
+      <updated>1386494673607</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -535,12 +574,13 @@
     <frame x="-2" y="0" width="1370" height="745" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21969697" sideWeight="0.43189368" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5681063" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21969697" sideWeight="0.605" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.395" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3739035" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -549,7 +589,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -597,7 +636,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI fix&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="task delete imp&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -618,126 +657,141 @@
     <MESSAGE value="tasks add and show" />
     <MESSAGE value="Download worker&#10;" />
     <MESSAGE value="UI fix&#10;" />
+    <MESSAGE value="task delete imp&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/FizzyRestApp/download_manager/download_worker.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/FizzyRestApp/views.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="27" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/conf/__init__.py">
+    <entry file="file://$PROJECT_DIR$/templates/html/waiting_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="48" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/download_worker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="36" selection-start="1837" selection-end="1837" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/posixpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="4" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.33272058">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRest/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="0" selection-start="4820" selection-end="4820" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRest/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="38" selection-start="190" selection-end="202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/utils/importlib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="17" selection-start="973" selection-end="982" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/html/task_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="20" selection-start="750" selection-end="750" vertical-scroll-proportion="-9.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/jquery-1.7.2.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="60" selection-start="65295" selection-end="65295" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/html/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="522" selection-end="522" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="24" selection-start="587" selection-end="587" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="0" selection-start="8747" selection-end="8747" vertical-scroll-proportion="0.0">
+        <state line="12" column="29" selection-start="291" selection-end="291" vertical-scroll-proportion="-5.6538463">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FizzyRestApp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="20" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0">
+        <state line="30" column="0" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/tasks.txt">
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/html/html_content_type_provider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.36889693">
+        <state line="18" column="0" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/shortcuts/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="0" selection-start="4524" selection-end="4524" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/posixpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/utils/_os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/encodings/utf_8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/template/loaders/filesystem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/template/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="155" column="0" selection-start="6289" selection-end="6289" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/utils/encoding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/utils/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="0" selection-start="6733" selection-end="6733" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/template/debug.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="1210" selection-end="1210" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/template/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="223" column="0" selection-start="7435" selection-end="7435" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="33" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="30" selection-start="534" selection-end="534" vertical-scroll-proportion="0.47469458">
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

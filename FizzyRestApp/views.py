@@ -10,24 +10,31 @@ import os
 def index(request):
     provider = create_by_request(request)
     if request.method == 'GET':
-        data = Task.objects.all().order_by('pk').reverse()[:30]
+        data = Task.objects.all().filter(status='downloading').order_by('pk').reverse()
         return provider.index_get(request, data)
     elif request.method == 'POST':
             content_obj = provider.index_post(request)
             if content_obj.is_valid():
                 obj = content_obj.get_obj()
                 DownloadManager.add_task(obj)
-                return redirect('/')
-                # return redirect('/tasks/' + str(obj.pk))
+                # return redirect('/')
+                return redirect('/tasks/' + str(obj.pk))
             else:
                 return provider.response_list_errors(request, 
                                                      { 'errorsList' : content_obj.errors })
 
-def tasks_list(request):
+def waiting_list(request):
     provider = create_by_request(request)
     if request.method == 'GET':
-        manufacturers = Task.objects.all()
-        return provider.manufacturers_list_get(request, manufacturers)
+        tasks = Task.objects.filter(status='waiting')
+        count = tasks.count()
+        return provider.waiting_list_get(request, tasks)
+
+def done_list(request):
+    provider = create_by_request(request)
+    if request.method == 'GET':
+        tasks = Task.objects.all().filter(status='done')
+        return provider.done_list_get(request, tasks)
 
 def delete_task(task):
     if task.status != 'downloading':

@@ -9,22 +9,18 @@ class ContentTypeProvider:
         pass
 
     def index_post(self, request, data):
-        """
-        Return parsed from http object like 
-        Form or Serializer with is_valid() method
-        """
         pass
 
-    def tasks_list_get(self, request, data):
+    def waiting_list_get(self, request, data):
+        pass
+
+    def done_list_get(self, request, data):
         pass
 
     def task_detail_get(self, request, data):
         pass
 
     def task_detail_put(self, request, data):
-        """
-        Return parsed from http object to save
-        """
         pass
 
     def response_ok(self, request):

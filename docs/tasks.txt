@@ -1,4 +1,6 @@
 *** TODO ***
+* waiting tab
+* better threads imp
 * Html full implementation
 * ajax update for file status
 * additional info about file

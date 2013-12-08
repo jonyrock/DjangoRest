@@ -1,6 +1,9 @@
 import os
 from threading import Thread
+from django_pglocks import advisory_lock
 from FizzyRest.settings import DOWNLOAD_DIR
+from FizzyRestApp.download_manager import STATUS_LOCK_ID
+
 from FizzyRestApp.models import Task
 from random import randint
 import urllib2
@@ -10,10 +13,25 @@ class DownloadWorker(Thread):
     def __init__(self, pk_):
         Thread.__init__(self)
         self.pk = pk_
-
+    
     def run(self):
+        while True:
+            if self.pk == None:
+                return
+            self.download()
+            self.pk = None
+            with advisory_lock(STATUS_LOCK_ID):
+                try:
+                    task = Task.objects.filter(status='waiting')[0]
+                except:
+                    return
+                task.status = 'downloading'
+                task.save()
+                self.pk = task.pk
+                    
+                    
+    def download(self):
         task = Task.objects.get(pk=self.pk)
-        task.status = ''
         try:
             url = task.fileUrl
             file_name = str(randint(1000, 9999)) + '_' +url.split('/')[-1]
@@ -23,7 +41,7 @@ class DownloadWorker(Thread):
             meta = u.info()
             file_size = int(meta.getheaders("Content-Length")[0])
             
-            task.status = 'downloading'
+            
             task.downloadedFileName = file_name
             
             file_name = os.path.join(DOWNLOAD_DIR, file_name)
