@@ -8,7 +8,7 @@ html, body { font-family: Verdana, Arial, sans-serif; background: white; height:
     text-decoration: none; color: #444 }
 #base-top-navigation a:hover { background: #aaa; color:white }
 #base-top-navigation a.active { background: #ff11bb; color:white }
-#base-content { padding: 10px; clear: both; margin-bottom: 50px }
+#base-content { padding: 10px; clear: both; padding-bottom: 60px }
 #base-footer { width: 100%; height: 40px; padding-top: 10px; position: absolute; 
     bottom: 0; font-size: smaller; text-align: center; border-top: 1px dotted #aaa }
 #base-footer a { color: cornflowerblue; text-decoration: underline }

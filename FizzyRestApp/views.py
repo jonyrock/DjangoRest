@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import redirect
 from django.views.decorators.csrf import csrf_exempt
+from FizzyRestApp.download_manager.download_manager import DownloadManager
 from models import Task
 from content_type_providers.content_type_provider import create_by_request
 
@@ -8,14 +9,15 @@ from content_type_providers.content_type_provider import create_by_request
 def index(request):
     provider = create_by_request(request)
     if request.method == 'GET':
-        data = Task.objects.all()[:30]
+        data = Task.objects.all().order_by('pk').reverse()[:30]
         return provider.index_get(request, data)
     elif request.method == 'POST':
             content_obj = provider.index_post(request)
             if content_obj.is_valid():
                 obj = content_obj.get_obj()
-                obj.save()
-                return redirect('/tasks/' + str(obj.pk))
+                DownloadManager.add_task(obj)
+                return redirect('/')
+                # return redirect('/tasks/' + str(obj.pk))
             else:
                 return provider.response_list_errors(request, 
                                                      { 'errorsList' : content_obj.errors })
@@ -28,9 +30,6 @@ def tasks_list(request):
     
 @csrf_exempt
 def task_details(request, pk):
-    """
-    Retrieve, update or delete a manufacturer info.
-    """
     try:
         task = Task.objects.get(pk=pk)
     except Task.DoesNotExist:

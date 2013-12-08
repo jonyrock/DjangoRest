@@ -1,10 +1,12 @@
 *** TODO ***
-* Task worker
 * Get worker status
 * Worker control test: delete and pause (through console)
 * Worker user interface: delete and pause
 * Worker user interface tests
 * Html full implementation
+* ajax update for file status
+* additional info about file
+* tabs: completed, error, 
 
 *** GOOD TODO ***
 * Check refactoring for tasks
@@ -13,6 +15,7 @@
 * fix logo
 
 *** DONE ***
+* Task worker
 * Postgres model add test
 * Postgres model add from form
 * User task model

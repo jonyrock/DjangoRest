@@ -149,3 +149,6 @@ LOGGING = {
 REST_FRAMEWORK = {
     'PAGINATE_BY': 10
 }
+
+
+DOWNLOAD_DIR = os.path.join(BASE_DIR, 'download')
