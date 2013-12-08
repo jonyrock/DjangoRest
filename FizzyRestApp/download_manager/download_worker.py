@@ -74,9 +74,10 @@ class DownloadWorker(Thread):
         except Exception as e:
             task.status = 'error'
             task.errorReason = str(e)
-            if task.downloadedFileName is not None:
-                os.remove(task.file_path())
             task.save()
+            if task.downloadedFileName:
+                os.remove(task.file_path())
+            
 
 
     def update_progress_or_get_deleted_flag(self, downloaded):

@@ -5,32 +5,36 @@ from forms import TaskForm
 
 
 class HtmlContentTypeProvider(ContentTypeProvider):
-    def index_get(self, request, data):
+    
+    def __init__(self, request_):
+        self.request = request_
+    
+    def index_get(self, data):
         return render_to_response("html/index.html",
                                   {'data': data,
                                    'form': TaskForm()
                                   })
 
-    def index_post(self, request):
-        form = TaskForm(request.POST)
+    def index_post(self):
+        form = TaskForm(self.request.POST)
         return form
 
-    def waiting_list_get(self, request, data):
+    def waiting_list_get(self, data):
         return render_to_response("html/waiting_list.html", data)
 
-    def error_list_get(self, request, data):
+    def error_list_get(self, data):
         return render_to_response("html/error_list.html", data)
 
-    def done_list_get(self, request, data):
+    def done_list_get(self, data):
         return render_to_response("html/done_list.html", data)
 
-    def task_detail_get(self, request, data):
+    def task_detail_get(self, data):
         return render_to_response("html/task_detail.html", data)
 
-    def response_ok(self, request):
+    def response_ok(self):
         return render_to_response("html/ok.html")
 
-    def response_list_errors(self, request, errorsList):
+    def response_list_errors(self, errorsList):
         return render_to_response("html/errors_list.html", errorsList)
     
     

@@ -11,35 +11,34 @@ def index(request):
     provider = create_by_request(request)
     if request.method == 'GET':
         data = Task.task_list().filter(status='downloading')
-        return provider.index_get(request, data)
+        return provider.index_get(data)
     elif request.method == 'POST':
-            content_obj = provider.index_post(request)
+            content_obj = provider.index_post()
             if content_obj.is_valid():
                 obj = content_obj.get_obj()
                 DownloadManager.add_task(obj)
                 # return redirect('/')
                 return redirect('/tasks/' + str(obj.pk))
             else:
-                return provider.response_list_errors(request, 
-                                                     { 'errorsList' : content_obj.errors })
+                return provider.response_list_errors({ 'errorsList' : content_obj.errors })
 
 def waiting_list(request):
     provider = create_by_request(request)
     if request.method == 'GET':
         tasks = Task.task_list().filter(status='waiting')
-        return provider.waiting_list_get(request, {'tasks': tasks })
+        return provider.waiting_list_get({'tasks': tasks })
 
 def done_list(request):
     provider = create_by_request(request)
     if request.method == 'GET':
         tasks = Task.task_list().filter(status='done')
-        return provider.done_list_get(request, {'tasks': tasks })
+        return provider.done_list_get({'tasks': tasks })
 
 def error_list(request):
     provider = create_by_request(request)
     if request.method == 'GET':
         tasks = Task.task_list().filter(status='error')
-        return provider.error_list_get(request, {'tasks': tasks })
+        return provider.error_list_get({'tasks': tasks })
 
 
 @csrf_exempt
@@ -51,10 +50,10 @@ def task_details(request, pk):
     
     provider = create_by_request(request)
     if request.method == 'GET':
-        return provider.task_detail_get(request, { 'task': task } )
+        return provider.task_detail_get({'task': task } )
         
     elif request.method == 'PUT':
-        obj = provider.manufacturer_detail_put(request)
+        obj = provider.task_detail_put()
         if obj.is_valid():
             obj.save()
             return provider.response_ok()

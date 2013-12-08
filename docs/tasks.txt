@@ -1,16 +1,21 @@
 *** TODO ***
-* finished time, created
+* Put new title name for task
 * Html full implementation
+* json provider
 * ajax update for file status
-* additional info about file
 * statistics for requests
+* xml output
+* txt output
+
 
 *** GOOD TODO ***
+* additional info about file
 * decorators for provider
 * active tab
 * fix logo
 
 *** DONE ***
+* finished time, created
 * Ordered tasks in model
 * error reason
 * tabs: completed, error,

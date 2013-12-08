@@ -1,35 +1,37 @@
 def create_by_request(request):
-    from html.html_content_type_provider import HtmlContentTypeProvider
-
-    return HtmlContentTypeProvider()
+    from html_provider.html_content_type_provider import HtmlContentTypeProvider
+    from json_provider.json_content_type_provider import JsonContentTypeProvider
+    if request.META['HTTP_ACCEPT'] == 'application/json':
+        return JsonContentTypeProvider(request)
+    return HtmlContentTypeProvider(request)
 
 
 class ContentTypeProvider:
-    def index_get(self, request, data):
+    def index_get(self, data):
         pass
 
-    def index_post(self, request):
+    def index_post(self):
         pass
 
-    def waiting_list_get(self, request, data):
+    def waiting_list_get(self, data):
         pass
 
-    def error_list_get(selfself, request, data):
+    def error_list_get(self, data):
         pass
 
-    def done_list_get(self, request, data):
+    def done_list_get(self, data):
         pass
 
-    def task_detail_get(self, request, data):
+    def task_detail_get(self, data):
         pass
 
-    def task_detail_put(self, request, data):
+    def task_detail_put(self, data):
         pass
 
-    def response_ok(self, request):
+    def response_ok(self):
         pass
 
-    def response_list_errors(self, request, errorsList):
+    def response_list_errors(self, errorsList):
         pass
 
  
