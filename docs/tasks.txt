@@ -1,5 +1,4 @@
 *** TODO ***
-* Get worker status
 * Worker control test: delete and pause (through console)
 * Worker user interface: delete and pause
 * Worker user interface tests
@@ -9,6 +8,7 @@
 * tabs: completed, error, 
 
 *** GOOD TODO ***
+* Get worker status
 * Check refactoring for tasks
 * only active tasks on in index
 * show files in queue if tasks is waiting 

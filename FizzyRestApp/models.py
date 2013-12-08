@@ -18,3 +18,6 @@ class Task(models.Model):
     
     def download_percentage_formatted(self):
         return str(int(self.download_percentage()))
+    
+    def download_url(self):
+        return '/static/download/' + self.downloadedFileName

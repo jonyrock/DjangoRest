@@ -14,9 +14,9 @@
             {% for t in data %}
             <tr>
                 <td> {{ t.title }} </td>
-                <td> {{ t.fileUrl }} </td>
-                <td> {{ t.download_percentage_formatted }} </td>
+                <td> {{ t.download_percentage_formatted }} %</td>
                 <td> {{ t.status }} </td>
+                <td> <a href="/tasks/{{ t.pk }}">details</a>  </td>
             </tr>
             {% endfor %}
             </table>
@@ -27,7 +27,7 @@
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
-            <input type="submit" value=DOWNLOAD>
+            <input type="submit" value="START DOWNLOAD">
         </form>
     </div>
 {% endblock %}

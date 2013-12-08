@@ -151,4 +151,4 @@ REST_FRAMEWORK = {
 }
 
 
-DOWNLOAD_DIR = os.path.join(BASE_DIR, 'download')
+DOWNLOAD_DIR = os.path.join(BASE_DIR, 'static', 'download')
