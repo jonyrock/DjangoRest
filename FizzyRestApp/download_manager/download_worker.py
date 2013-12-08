@@ -1,5 +1,6 @@
 import os
 from threading import Thread
+from celery.contrib.methods import task_method
 from django_pglocks import advisory_lock
 from FizzyRest.settings import DOWNLOAD_DIR
 from FizzyRestApp.download_manager import STATUS_LOCK_ID
@@ -71,6 +72,8 @@ class DownloadWorker(Thread):
         except Exception as e:
             task.status = 'error'
             task.errorReason = str(e)
+            if task.downloadedFileName is not None:
+                os.remove(task.file_path())
             task.save()
 
 

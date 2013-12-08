@@ -41,12 +41,7 @@ def error_list(request):
         tasks = Task.objects.filter(status='error')
         return provider.error_list_get(request, {'tasks': tasks })
 
-def delete_task(task):
-    if task.status != 'downloading':
-        if os.path.exists(task.file_path()):
-            os.remove(task.file_path())
-    task.delete()
- 
+
 @csrf_exempt
 def task_details(request, pk):
     try:
@@ -67,5 +62,5 @@ def task_details(request, pk):
             return provider.response_error_list(obj.errors)
 
     elif request.method == 'DELETE':
-        delete_task (task)
+        DownloadManager.delete_task(task)
         return HttpResponse(status=204)

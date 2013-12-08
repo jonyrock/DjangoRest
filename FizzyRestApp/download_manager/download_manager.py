@@ -2,6 +2,7 @@ from FizzyRestApp.download_manager import STATUS_LOCK_ID
 from FizzyRestApp.download_manager.download_worker import DownloadWorker
 from FizzyRestApp.models import Task
 from django_pglocks import advisory_lock
+import os
 
 
 
@@ -18,6 +19,13 @@ class DownloadManager:
             task.save()
         worker = DownloadWorker(task.pk)
         worker.start()
+    
+    @staticmethod
+    def delete_task(task):
+        if task.status != 'downloading' and task.status != 'error':
+            if os.path.exists(task.file_path()):
+                os.remove(task.file_path())
+        task.delete()
 
 
 
