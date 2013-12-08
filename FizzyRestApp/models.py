@@ -13,6 +13,7 @@ class Task(models.Model):
     downloadedFileName = models.CharField(max_length=100)
     fileSizeBytes = models.IntegerField(default=0)
     downloadedBytes = models.IntegerField(default=0)
+    errorReason = models.CharField(max_length=600, blank=True, default='')
     
     def download_percentage(self):
         if self.fileSizeBytes == 0:

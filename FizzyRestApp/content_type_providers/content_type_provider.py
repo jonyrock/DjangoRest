@@ -8,10 +8,13 @@ class ContentTypeProvider:
     def index_get(self, request, data):
         pass
 
-    def index_post(self, request, data):
+    def index_post(self, request):
         pass
 
     def waiting_list_get(self, request, data):
+        pass
+
+    def error_list_get(selfself, request, data):
         pass
 
     def done_list_get(self, request, data):

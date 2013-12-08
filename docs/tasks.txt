@@ -1,19 +1,22 @@
 *** TODO ***
-* waiting tab
-* better threads imp
 * Html full implementation
 * ajax update for file status
 * additional info about file
-* tabs: completed, error, 
+* error reason
+* statistics for requests
 
 *** GOOD TODO ***
-* Get worker status
-* Check refactoring for tasks
-* only active tasks on in index
-* show files in queue if tasks is waiting 
+* decorators for provider
 * fix logo
 
 *** DONE ***
+* tabs: completed, error,
+* show files in queue if tasks is waiting
+* only active tasks on in index
+* Get worker status
+* Check refactoring for tasks
+* better threads imp
+* waiting tab
 * Worker control test: delete 
 * html delete ui and urls
 * Task worker

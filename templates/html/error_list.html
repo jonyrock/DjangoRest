@@ -1,0 +1,23 @@
+{%  extends 'html/base.html' %}
+
+{% block title %}
+    Tasks with errors 
+{% endblock %}
+
+{% block content %}
+    <div id="logos-list">
+        {% if not tasks %}
+            <h2>No error tasks</h2>
+        {% else %}        
+            <table>
+            {% for t in tasks %}
+            <tr>
+                <td> {{ t.title }} </td>
+                <td> {{ t.fileUrl }} %</td>
+                <td> <a href="/tasks/{{ t.pk }}">details</a>  </td>
+            </tr>
+            {% endfor %}
+            </table>
+        {% endif %}
+    </div>
+{% endblock %}

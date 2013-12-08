@@ -35,6 +35,12 @@ def done_list(request):
         tasks = Task.objects.filter(status='done')
         return provider.done_list_get(request, {'tasks': tasks })
 
+def error_list(request):
+    provider = create_by_request(request)
+    if request.method == 'GET':
+        tasks = Task.objects.filter(status='error')
+        return provider.error_list_get(request, {'tasks': tasks })
+
 def delete_task(task):
     if task.status != 'downloading':
         if os.path.exists(task.file_path()):

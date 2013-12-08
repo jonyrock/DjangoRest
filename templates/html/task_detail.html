@@ -19,6 +19,12 @@
             <a href="{{ task.download_url }}"> DOWNLOAD </a>
         </p>
     {% endif %}
+    
+    {% if task.status == 'error' %}
+        <p style="color: darkred">
+            {{ task.errorReason }}
+        </p>
+    {% endif %}
 
     <script language="javascript" type="text/javascript">
         function delete_me() {
