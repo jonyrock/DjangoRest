@@ -27,14 +27,13 @@ def waiting_list(request):
     provider = create_by_request(request)
     if request.method == 'GET':
         tasks = Task.objects.filter(status='waiting')
-        count = tasks.count()
-        return provider.waiting_list_get(request, tasks)
+        return provider.waiting_list_get(request, {'tasks': tasks })
 
 def done_list(request):
     provider = create_by_request(request)
     if request.method == 'GET':
-        tasks = Task.objects.all().filter(status='done')
-        return provider.done_list_get(request, tasks)
+        tasks = Task.objects.filter(status='done')
+        return provider.done_list_get(request, {'tasks': tasks })
 
 def delete_task(task):
     if task.status != 'downloading':

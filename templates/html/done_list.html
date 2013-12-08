@@ -7,11 +7,11 @@
 {% block content %}
     
     <div id="logos-list">
-        {% if data.count == 0 %}
+        {% if tasks.count == 0 %}
             <h2>No done tasks</h2>
         {% else %}        
             <table>
-            {% for t in data %}
+            {% for t in tasks %}
             <tr>
                 <td> {{ t.title }} </td>
                 <td> {{ t.fileUrl }} %</td>
