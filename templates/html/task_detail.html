@@ -1,14 +1,14 @@
-{%  extends 'html/base.html' %}
+{% extends 'html/base.html' %}
 
 {% block title %}
     Task details {{ task.title }}
-{% endblock  %}
+{% endblock %}
 
 {% block content %}
     <h2> {{ task.title }} </h2>
     <i>({{ task.status }})</i>
     <p>{{ task.fileUrl }}</p>
-    {% if task.status == 'done' or task.status == 'downloading'  %}
+    {% if task.status == 'done' or task.status == 'downloading' %}
         <p>File size: {{ task.fileSizeBytes }}</p>
     {% endif %}
     {% if task.status == 'downloading' %}
@@ -19,5 +19,19 @@
             <a href="{{ task.download_url }}"> DOWNLOAD </a>
         </p>
     {% endif %}
+
+    <script language="javascript" type="text/javascript">
+        function delete_me() {
+            $.ajax({
+                type: 'DELETE',
+                success: function (result) {
+                    document.location="/";
+                }
+            });
+        }
+    </script>
+
+    <input type="button" value="DELETE" onclick="delete_me()">
+
 {% endblock %}
 

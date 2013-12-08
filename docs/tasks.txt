@@ -1,7 +1,4 @@
 *** TODO ***
-* Worker control test: delete and pause (through console)
-* Worker user interface: delete and pause
-* Worker user interface tests
 * Html full implementation
 * ajax update for file status
 * additional info about file
@@ -15,6 +12,8 @@
 * fix logo
 
 *** DONE ***
+* Worker control test: delete 
+* html delete ui and urls
 * Task worker
 * Postgres model add test
 * Postgres model add from form

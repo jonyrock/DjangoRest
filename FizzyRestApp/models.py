@@ -1,4 +1,7 @@
+from django.test.utils import override_settings
 from django.db import models
+import FizzyRest.settings
+import os
 
 TASK_STATUSES = ['done', 'downloading', 'waiting', 'error']
 
@@ -21,3 +24,6 @@ class Task(models.Model):
     
     def download_url(self):
         return '/static/download/' + self.downloadedFileName
+    
+    def file_path(self):
+        return os.path.join(FizzyRest.settings.DOWNLOAD_DIR, self.downloadedFileName)

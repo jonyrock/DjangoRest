@@ -4,6 +4,7 @@ from django.views.decorators.csrf import csrf_exempt
 from FizzyRestApp.download_manager.download_manager import DownloadManager
 from models import Task
 from content_type_providers.content_type_provider import create_by_request
+import os
 
 @csrf_exempt
 def index(request):
@@ -27,7 +28,13 @@ def tasks_list(request):
     if request.method == 'GET':
         manufacturers = Task.objects.all()
         return provider.manufacturers_list_get(request, manufacturers)
-    
+
+def delete_task(task):
+    if task.status != 'downloading':
+        if os.path.exists(task.file_path()):
+            os.remove(task.file_path())
+    task.delete()
+ 
 @csrf_exempt
 def task_details(request, pk):
     try:
@@ -48,5 +55,5 @@ def task_details(request, pk):
             return provider.response_error_list(obj.errors)
 
     elif request.method == 'DELETE':
-        task.delete()
+        delete_task (task)
         return HttpResponse(status=204)
