@@ -23,3 +23,9 @@ class TaskSerializer(serializers.Serializer):
 
         # Create new instance
         return Task(**attrs)
+    
+    def get_obj(self):
+        t = Task()
+        t.title = self.data['title'].strip()
+        t.fileUrl = self.data['fileUrl'].strip()
+        return t

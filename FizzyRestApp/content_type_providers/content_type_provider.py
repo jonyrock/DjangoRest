@@ -12,6 +12,12 @@ class ContentTypeProvider:
 
     def index_post(self):
         pass
+    
+    def index_post_ok(self, data):
+        pass
+    
+    def index_post_error(self, errorsList):
+        pass
 
     def waiting_list_get(self, data):
         pass
@@ -28,10 +34,7 @@ class ContentTypeProvider:
     def task_detail_put(self, data):
         pass
 
-    def response_ok(self):
-        pass
+    
 
-    def response_list_errors(self, errorsList):
-        pass
 
  

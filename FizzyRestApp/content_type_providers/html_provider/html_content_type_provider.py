@@ -1,5 +1,5 @@
 from FizzyRestApp.content_type_providers.content_type_provider import ContentTypeProvider
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, redirect
 from FizzyRestApp.models import Task
 from forms import TaskForm
 
@@ -28,10 +28,10 @@ class HtmlContentTypeProvider(ContentTypeProvider):
     def task_detail_get(self, data):
         return render_to_response("html/task_detail.html", data)
 
-    def response_ok(self):
-        return render_to_response("html/ok.html")
+    def index_post_ok(self, data):
+        return redirect('/tasks/' + str(data['task'].pk))
 
-    def response_list_errors(self, errorsList):
+    def index_post_error(self, errorsList):
         return render_to_response("html/errors_list.html", errorsList)
     
     

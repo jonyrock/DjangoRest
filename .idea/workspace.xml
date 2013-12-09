@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="4bc28c67-59d2-481b-a977-33ff2762357e" name="Default" comment="" />
-    <list default="true" id="159db23b-6b5e-47d5-8806-8cc6165a5bc3" name="provider for views" comment="json provider begin">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py" afterPath="$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py" />
+    <list default="true" id="159db23b-6b5e-47d5-8806-8cc6165a5bc3" name="provider for views" comment="json lists">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py" afterPath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/html_provider/html_content_type_provider.py" afterPath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/html_provider/html_content_type_provider.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/html/index.html" afterPath="$PROJECT_DIR$/templates/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/json_content_type_provider.py" afterPath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/json_content_type_provider.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/serializers.py" afterPath="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/serializers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/tasks.txt" afterPath="$PROJECT_DIR$/docs/tasks.txt" />
@@ -14,17 +13,17 @@
     </list>
     <ignored path="FizzyRest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386543705521" ignored="false" />
+    <file path="/Dummy.txt" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386580582349" ignored="false" />
     <file path="/controllers.py" changelist="4bc28c67-59d2-481b-a977-33ff2762357e" time="1386005387970" ignored="false" />
-    <file path="/views.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386579213334" ignored="false" />
+    <file path="/views.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386583704723" ignored="false" />
     <file path="/view_factory.py" changelist="4bc28c67-59d2-481b-a977-33ff2762357e" time="1386011733089" ignored="false" />
-    <file path="/serializers.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386538985507" ignored="false" />
-    <file path="/html_content_type_provider.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386579289024" ignored="false" />
-    <file path="/Python Console" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386579071223" ignored="false" />
+    <file path="/serializers.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386580944074" ignored="false" />
+    <file path="/html_content_type_provider.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386583327796" ignored="false" />
+    <file path="/Python Console" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386584160085" ignored="false" />
     <file path="/main.css" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386430140512" ignored="false" />
     <file path="/base.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386514064513" ignored="false" />
     <file path="/urls.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386513606649" ignored="false" />
-    <file path="/content_type_provider.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386540049097" ignored="false" />
+    <file path="/content_type_provider.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386583304706" ignored="false" />
     <file path="/index.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386579334438" ignored="false" />
     <file path="/forms.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386519364330" ignored="false" />
     <file path="/errors_list.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386086811461" ignored="false" />
@@ -42,7 +41,7 @@
     <file path="/waiting_list.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386507295978" ignored="false" />
     <file path="/done_list.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386509592444" ignored="false" />
     <file path="/error_list.html" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386513743402" ignored="false" />
-    <file path="/json_content_type_provider.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386579598605" ignored="false" />
+    <file path="/json_content_type_provider.py" changelist="159db23b-6b5e-47d5-8806-8cc6165a5bc3" time="1386584024597" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,110 +60,93 @@
     <favorites_list name="FizzyRest" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="38" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serializers.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="28" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content_type_provider.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="8" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="html_content_type_provider.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/html_provider/html_content_type_provider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="30" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tasks.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/tasks.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="download_manager.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="40" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/html/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="42" selection-start="365" selection-end="365" vertical-scroll-proportion="-7.8461537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="json_response.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/json_response.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="json_content_type_provider.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/json_content_type_provider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="46" selection-start="898" selection-end="898" vertical-scroll-proportion="0.49246815">
-              <folding>
-                <element signature="e#0#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serializers.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python2.7/dist-packages/rest_framework/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="0" selection-start="4886" selection-end="4886" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.4229798">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/FizzyRestApp/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="0" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="e#0#36#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="html_content_type_provider.py" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/html_provider/html_content_type_provider.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="23" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="e#0#89#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/html_provider/forms.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="8" selection-start="226" selection-end="347" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="e#0#24#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="download_worker.py" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/download_worker.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="12" column="0" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="download_manager.py" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="23" selection-start="576" selection-end="576" vertical-scroll-proportion="0.6980676">
+                  <folding>
+                    <element signature="e#0#56#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="json_content_type_provider.py" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/json_content_type_provider.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="14" column="24" selection-start="587" selection-end="587" vertical-scroll-proportion="0.18930958">
+                  <folding>
+                    <element signature="e#0#45#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="serializers.py" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/serializers.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="20" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="e#0#32#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -189,15 +171,15 @@
         <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json/serializers.py" />
         <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json/json_content_type_provider.py" />
         <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/__init__.py" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py" />
         <option value="$PROJECT_DIR$/FizzyRestApp/download_manager/download_worker.py" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/serializers.py" />
         <option value="$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/views.py" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/html_provider/html_content_type_provider.py" />
         <option value="$PROJECT_DIR$/templates/html/index.html" />
-        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/json_content_type_provider.py" />
         <option value="$PROJECT_DIR$/docs/tasks.txt" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/serializers.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/html_provider/html_content_type_provider.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/views.py" />
+        <option value="$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/json_content_type_provider.py" />
       </list>
     </option>
   </component>
@@ -339,6 +321,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="download_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRestApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="content_type_providers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -362,6 +362,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="json_provider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FizzyRestApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content_type_providers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html_provider" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -641,7 +663,11 @@
       <created>1386543707153</created>
       <updated>1386543707153</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="json lists">
+      <created>1386580583760</created>
+      <updated>1386580583760</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -676,7 +702,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47807017" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47807017" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1547492" sideWeight="0.5219298" order="0" side_tool="false" content_ui="combo" />
@@ -731,7 +757,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="json provider begin" />
+    <option name="LAST_COMMIT_MESSAGE" value="json lists" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -759,10 +785,11 @@
     <MESSAGE value="delete error tasks bug fix" />
     <MESSAGE value="finished filed" />
     <MESSAGE value="json provider begin" />
+    <MESSAGE value="json lists" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="43" />
+      <option name="time" value="49" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -773,24 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/html_provider/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -798,44 +807,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/download_worker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="40" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/rest_framework/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="160" column="0" selection-start="4886" selection-end="4886" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/html_provider/html_content_type_provider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#89#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -853,45 +828,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/json_response.py">
+    <entry file="file://$PROJECT_DIR$/docs/tasks.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
+        <state line="12" column="26" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#1#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/html_provider/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="8" selection-start="226" selection-end="347" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="28" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0">
+        <state line="17" column="20" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FizzyRestApp/views.py">
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/json_response.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="38" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
+        <state line="4" column="8" selection-start="130" selection-end="130" vertical-scroll-proportion="0.07683616">
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/tasks.txt">
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/content_type_provider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+        <state line="14" column="4" selection-start="461" selection-end="461" vertical-scroll-proportion="0.29795918">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/html_provider/html_content_type_provider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/download_worker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FizzyRestApp/content_type_providers/json_provider/json_content_type_provider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="46" selection-start="898" selection-end="898" vertical-scroll-proportion="0.49246815">
+        <state line="14" column="24" selection-start="587" selection-end="587" vertical-scroll-proportion="0.18930958">
           <folding>
-            <element signature="e#0#89#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FizzyRestApp/download_manager/download_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="23" selection-start="576" selection-end="576" vertical-scroll-proportion="0.6980676">
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
