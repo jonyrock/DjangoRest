@@ -1,14 +1,15 @@
 *** TODO ***
 * statistics for requests
-* xml output
+
 
 *** GOOD TODO ***
-* additional info about file
 * decorators for provider
 * active tab
 * fix logo
 
 *** DONE ***
+* additional info about file
+* xml output
 * txt output
 * Html full implementation
 * Put new title name for task (json)

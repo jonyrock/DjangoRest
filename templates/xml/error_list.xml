@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<tasks>
+{% for task in tasks %}
+    <task>
+        <pk> {{ task.pk }} </pk>
+        <title> {{ task.title }} </title>
+        <url>{{ task.fileUrl }}</url>
+        <errorReason> {{ task.errorReson }} </errorReason>
+        <page>/tasks/{{ task.pk }}</page>
+    </task>
+{% endfor %}
+</tasks>

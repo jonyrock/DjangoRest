@@ -1,11 +1,17 @@
+
+
+
 def create_by_request(request):
     from html_provider.html_content_type_provider import HtmlContentTypeProvider
     from json_provider.json_content_type_provider import JsonContentTypeProvider
     from txt_provider.txt_content_type_provider import TxtContentTypeProvider
+    from xml_provider.xml_content_type_provider import XmlContentTypeProvider
     if request.META['HTTP_ACCEPT'].startswith('application/json'):
         return JsonContentTypeProvider(request)
     if request.META['HTTP_ACCEPT'].startswith('text/plain'):
         return TxtContentTypeProvider(request)
+    if request.META['HTTP_ACCEPT'].startswith('application/xml'):
+        return XmlContentTypeProvider(request)
     return HtmlContentTypeProvider(request)
 
 

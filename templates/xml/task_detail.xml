@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+
+<task>
+    <title>{{ task.title }} </title>
+    <status>({{ task.status }})</status>
+    <fileUrl>{{ task.fileUrl }}</fileUrl>
+    <created>{{ task.created }}</created>
+    {% if task.status == 'done' or task.status == 'downloading' %}
+        <fileSize> {{ task.fileSizeBytes }}</fileSize>
+    {% endif %}
+    {% if task.status == 'downloading' %}
+        <downloaded> {{ task.downloadedBytes }}</downloaded>
+        <downloadedBytes>{{ task.download_percentage_formatted }}</downloadedBytes>
+    {% endif %}
+    {% if task.status == 'done' %}
+        <finished>{{ task.finished }}</finished>
+    {% endif %}
+
+    {% if task.status == 'error' %}
+        <errorReason>
+            {{ task.errorReason }}
+        </errorReason>
+    {% endif %}
+
+</task>
+
+    
+
+
