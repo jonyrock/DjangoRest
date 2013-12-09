@@ -1,0 +1,9 @@
+Downloaded
+--------------------
+{% if tasks.count == 0 %}
+    NO TASKS
+{% else %}
+{% for task in tasks %}
+{{ task.pk }} {{ task.title }} {{ t.fileUrl }}%   
+{% endfor %}
+{% endif %}

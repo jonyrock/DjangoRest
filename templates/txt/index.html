@@ -1,0 +1,9 @@
+Current downloading
+--------------------
+{% if tasks.count == 0 %}
+    NO TASKS
+{% else %}
+{% for task in tasks %}
+{{ task.pk }} {{ task.title }} {{ task.download_percentage_formatted }}    
+{% endfor %}
+{% endif %}

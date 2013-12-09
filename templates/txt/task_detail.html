@@ -1,0 +1,21 @@
+{{ task.title }}
+------------------
+Status: {{ task.status }}
+File url: {{ task.fileUrl }}
+Created: {{ task.created }}
+{% if task.status == 'done' or task.status == 'downloading' %}
+File size: {{ task.fileSizeBytes }}
+{% endif %}
+{% if task.status == 'downloading' %}
+Downloaded: {{ task.downloadedBytes }} ({{ task.download_percentage_formatted }}%)
+{% endif %}
+{% if task.status == 'done' %}
+DOWNLOAD: {{ task.download_url }}
+{% endif %}
+{% if task.status == 'error' %}        
+Error: {{ task.errorReason }}
+{% endif %}
+        
+
+
+

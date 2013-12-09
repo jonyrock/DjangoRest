@@ -1,8 +1,6 @@
 *** TODO ***
 * statistics for requests
 * xml output
-* txt output
-
 
 *** GOOD TODO ***
 * additional info about file
@@ -11,6 +9,7 @@
 * fix logo
 
 *** DONE ***
+* txt output
 * Html full implementation
 * Put new title name for task (json)
 * json post task
