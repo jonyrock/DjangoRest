@@ -1,5 +1,7 @@
 *** TODO ***
-* Put new title name for task
+* json list outputs test
+* json post task
+* Put new title name for task (json)
 * Html full implementation
 * json provider
 * ajax update for file status
@@ -15,6 +17,7 @@
 * fix logo
 
 *** DONE ***
+* json errors list
 * finished time, created
 * Ordered tasks in model
 * error reason

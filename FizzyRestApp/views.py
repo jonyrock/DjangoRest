@@ -10,8 +10,8 @@ import os
 def index(request):
     provider = create_by_request(request)
     if request.method == 'GET':
-        data = Task.task_list().filter(status='downloading')
-        return provider.index_get(data)
+        tasks = Task.task_list().filter(status='downloading')
+        return provider.index_get({'tasks': tasks })
     elif request.method == 'POST':
             content_obj = provider.index_post()
             if content_obj.is_valid():

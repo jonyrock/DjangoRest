@@ -7,15 +7,15 @@
 {% block content %}
     
     <div id="logos-list">
-        {% if not data %}
+        {% if tasks.count == 0 %}
             <h2>No downloading tasks</h2>
         {% else %}
             <table>
-            {% for t in data %}
+            {% for task in tasks %}
             <tr>
-                <td> {{ t.title }} </td>
-                <td> {{ t.download_percentage_formatted }} %</td>
-                <td> <a href="/tasks/{{ t.pk }}">details</a>  </td>
+                <td> {{ task.title }} </td>
+                <td> {{ task.download_percentage_formatted }} %</td>
+                <td> <a href="/tasks/{{ task.pk }}">details</a>  </td>
             </tr>
             {% endfor %}
             </table>

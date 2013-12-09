@@ -5,15 +5,12 @@ from forms import TaskForm
 
 
 class HtmlContentTypeProvider(ContentTypeProvider):
-    
     def __init__(self, request_):
         self.request = request_
-    
+
     def index_get(self, data):
-        return render_to_response("html/index.html",
-                                  {'data': data,
-                                   'form': TaskForm()
-                                  })
+        data.update({'form': TaskForm()})
+        return render_to_response("html/index.html", data)
 
     def index_post(self):
         form = TaskForm(self.request.POST)

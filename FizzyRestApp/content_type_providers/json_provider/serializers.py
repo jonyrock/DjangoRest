@@ -12,7 +12,7 @@ class TaskSerializer(serializers.Serializer):
         Create or update a new snippet instance, given a dictionary
         of deserialized field values.
 
-        Note that if we don't define thi    `s method, then deserializing
+        Note that if we don't define thi`s method, then deserializing
         data will simply return a dictionary of items.
         """
         if instance:

@@ -5,7 +5,6 @@ from django_pglocks import advisory_lock
 import os
 
 
-
 class DownloadManager:
     @staticmethod
     def add_task(task):
@@ -19,7 +18,7 @@ class DownloadManager:
             task.save()
         worker = DownloadWorker(task.pk)
         worker.start()
-    
+
     @staticmethod
     def delete_task(task):
         if task.status != 'downloading' and task.status != 'error':
