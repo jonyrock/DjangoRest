@@ -1,7 +1,7 @@
 def create_by_request(request):
     from html_provider.html_content_type_provider import HtmlContentTypeProvider
     from json_provider.json_content_type_provider import JsonContentTypeProvider
-    if request.META['HTTP_ACCEPT'] == 'application/json':
+    if request.META['HTTP_ACCEPT'].startswith('application/json'):
         return JsonContentTypeProvider(request)
     return HtmlContentTypeProvider(request)
 
@@ -31,7 +31,13 @@ class ContentTypeProvider:
     def task_detail_get(self, data):
         pass
 
-    def task_detail_put(self, data):
+    def task_detail_put(self):
+        pass
+    
+    def task_details_put_ok(self):
+        pass
+    
+    def task_details_put_error(self, errorsList):
         pass
 
     

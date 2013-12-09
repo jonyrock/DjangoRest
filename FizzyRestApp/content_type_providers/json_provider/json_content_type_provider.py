@@ -36,3 +36,14 @@ class JsonContentTypeProvider(ContentTypeProvider):
 
     def index_post_error(self, errorsList):
         return JSONResponse(errorsList)
+    
+    def task_details_put_ok(self):
+        return JSONResponse({'status': 'ok'})
+    
+    def task_details_put_error(self, errorsList):
+        return JSONResponse(errorsList)
+    
+    def task_detail_put(self):
+        data = JSONParser().parse(self.request)
+        serializer = TaskSerializer(data=data)
+        return serializer

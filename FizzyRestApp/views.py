@@ -60,10 +60,12 @@ def task_details(request, pk):
     elif request.method == 'PUT':
         obj = provider.task_detail_put()
         if obj.is_valid():
-            obj.save()
-            return provider.response_ok()
+            task.title = obj.object.title
+            task.fileUrl = obj.object.fileUrl
+            task.save()
+            return provider.task_details_put_ok()
         else:
-            return provider.response_error_list(obj.errors)
+            return provider.task_details_put_error(obj.errors)
 
     elif request.method == 'DELETE':
         DownloadManager.delete_task(task)

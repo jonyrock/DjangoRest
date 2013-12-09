@@ -5,7 +5,39 @@
 {% endblock %}
 
 {% block content %}
-    <h2> {{ task.title }} </h2>
+    
+    <script language="javascript" type="text/javascript">
+        function delete_me() {
+            $.ajax({
+                type: 'DELETE',
+                success: function (result) {
+                    document.location="/";
+                }
+            });
+        }
+        
+        function update_me(){
+            title = $("#taskTitle").val()
+            $.ajax({
+                type: 'PUT',
+                dataType: "json",
+                data: '{"title": "' + title + '", "fileUrl": "{{ task.fileUrl }}"}',
+                success: function (result) {
+                    $("#taskTitleH").html(title);
+                }
+            });
+        }
+    
+    </script>
+    
+    
+    <h2 id="taskTitleH"> {{ task.title }} </h2>
+    <p> 
+    
+        New title: <input type="text" value="" id="taskTitle">
+        <input type="button" value="CHANGE TITLE" onclick="update_me()">
+    </p>
+    
     <i>({{ task.status }})</i>
     <p>{{ task.fileUrl }}</p>
     <p>{{ task.created }}</p>
@@ -28,16 +60,7 @@
         </p>
     {% endif %}
 
-    <script language="javascript" type="text/javascript">
-        function delete_me() {
-            $.ajax({
-                type: 'DELETE',
-                success: function (result) {
-                    document.location="/";
-                }
-            });
-        }
-    </script>
+    
 
     <input type="button" value="DELETE" onclick="delete_me()">
 

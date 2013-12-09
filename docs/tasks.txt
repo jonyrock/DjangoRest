@@ -1,9 +1,4 @@
 *** TODO ***
-* json post task
-* Put new title name for task (json)
-* Html full implementation
-* json provider
-* ajax update for file status
 * statistics for requests
 * xml output
 * txt output
@@ -16,6 +11,9 @@
 * fix logo
 
 *** DONE ***
+* Html full implementation
+* Put new title name for task (json)
+* json post task
 * json list outputs test
 * json errors list
 * finished time, created
