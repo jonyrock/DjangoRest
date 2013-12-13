@@ -1,4 +1,4 @@
-
+from django.http import HttpResponse
 
 
 def create_by_request(request):
@@ -8,11 +8,14 @@ def create_by_request(request):
     from xml_provider.xml_content_type_provider import XmlContentTypeProvider
     if request.META['HTTP_ACCEPT'].startswith('application/json'):
         return JsonContentTypeProvider(request)
+    if request.META['HTTP_ACCEPT'].startswith('text/html'):
+        return HtmlContentTypeProvider(request)
     if request.META['HTTP_ACCEPT'].startswith('text/plain'):
         return TxtContentTypeProvider(request)
     if request.META['HTTP_ACCEPT'].startswith('application/xml'):
         return XmlContentTypeProvider(request)
-    return HtmlContentTypeProvider(request)
+    
+    return HttpResponse(status=206)
 
 
 class ContentTypeProvider:

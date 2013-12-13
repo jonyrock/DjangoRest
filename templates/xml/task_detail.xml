@@ -2,7 +2,7 @@
 
 <task>
     <title>{{ task.title }} </title>
-    <status>({{ task.status }})</status>
+    <status>ls{{ task.status }}</status>
     <fileUrl>{{ task.fileUrl }}</fileUrl>
     <created>{{ task.created }}</created>
     {% if task.status == 'done' or task.status == 'downloading' %}
